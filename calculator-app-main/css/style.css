@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.calc{
+    width: 100%;
+    height: 100vh;
+    background-color: #0d0d0d;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    height: 70%;
+    width: 30%;
+}
+.screen{
+   width: 100%;
+   height: 170px;
+   text-align: left;
+   margin: auto;
+
+}
+.screen input{
+    width: 100%;
+    height: 140px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #1b1a1a;
+    margin-top: 20px ;
+    color: #fff;
+    font-size: 60px;
+    text-align: end;
+    padding: 20px;
+}
+
+form div:nth-child(2){
+    background-color: #1b1a1a;
+    height: 370px;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: repeat(4 , 80px);
+    grid-template-rows: repeat(5 , 50px);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+form div:nth-child(2) input{
+    height: 40px;
+    width: 80px;
+    border: 0;
+    border-radius: 5px;
+    background-color: hsl(30, 25%, 89%);
+    font-size: 22px;
+    font-weight: 700;
+    box-shadow: 1px 2px 3px hsl(30, 25%, 89%) ;
+}
+form div:nth-child(2) input:nth-child(4){
+    background-color:   #676161;
+    color: #fff;
+    box-shadow: 1px 2px 3px  #676161;
+}
+form div:nth-child(2) input:nth-child(17){
+    width: 180px;
+    height: 50px;
+    grid-column: 1/3;
+    background-color:   #676161;
+    color: #fff;
+    box-shadow: 1px 2px 3px  #676161;
+}
+form div:nth-child(2) input:nth-child(18){
+    width: 180px;
+    height: 50px;
+    grid-column: 3/5;
+    background-color:  hsl(6, 63%, 50%);
+    box-shadow: 1px 2px 3px hsl(6, 63%, 50%); 
+    color: #fff;
+}
+form div:nth-child(2) input:hover{
+    background-color:  hsl(27, 41%, 95%);
+}
+form div:nth-child(2) input:nth-child(17):hover , form div:nth-child(2) input:nth-child(4):hover{
+    background-color: #867f7f;
+
+}
+form div:nth-child(2) input:nth-child(18):hover{
+    background-color: hsl(6, 88%, 63%);
+}
+
+

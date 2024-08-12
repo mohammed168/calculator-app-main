@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="calc">
+    <div class="calculator">
+    <form action="">
+    <div class="screen">
+        
+      <input type="text" name="screen">
+    </div>
+    <div>
+      <input type="button" value="7" onclick="screen.value += '7' " >
+      <input type="button" value="8" onclick="screen.value += '8' ">
+      <input type="button" value="9" onclick="screen.value += '9' ">
+      <input type="button" value="DEL" onclick="screen.value = screen.value.toString().slice(0,-1)">
+      <input type="button" value="4" onclick="screen.value += '4' ">
+      <input type="button" value="5" onclick="screen.value += '5' ">
+      <input type="button" value="6" onclick="screen.value += '6' ">
+      <input type="button" value="+" onclick="screen.value += '+' ">
+      <input type="button" value="1" onclick="screen.value += '1' ">
+      <input type="button" value="2" onclick="screen.value += '2' ">
+      <input type="button" value="3" onclick="screen.value += '3' ">
+      <input type="button" value="-" onclick="screen.value += '-' ">
+      <input type="button" value="." onclick="screen.value += '.' ">
+      <input type="button" value="0" onclick="screen.value += '0' ">
+      <input type="button" value="/" onclick="screen.value += '/' ">
+      <input type="button" value="*" onclick="screen.value += '*' ">
+      <input type="button" value="RESET" onclick="screen.value = '' ">
+      <input type="button" value="=" onclick="screen.value = eval(screen.value)" >
+    </div>
+  </form>
+  </div>
+</div>
+
+
+  
+
+
+  <script src="js/main.js"></script>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
